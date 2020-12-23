@@ -6,13 +6,9 @@ var southWest = L.latLng(33.064, -99.053),
     northEast = L.latLng(50.679, -69.697),
     bounds = L.latLngBounds(southWest, northEast);
 
-var map = L.mapbox.map('map', 'mapbox/streets-v11', {
-    maxBounds: bounds,
-    tileSize: 512,
-    zoomOffset: -1,
-    maxZoom: 16,
-    minZoom: 5
-}).setView([40, -81], 5);
+var map = L.mapbox.map('map')
+.setView([40, -81], 5)
+.addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
 
 var geoJson = ({
     "type": "FeatureCollection",

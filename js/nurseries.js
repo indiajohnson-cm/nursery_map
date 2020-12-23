@@ -8,6 +8,8 @@ var southWest = L.latLng(33.064, -99.053),
 
 var map = L.mapbox.map('map', 'mapbox/streets-v11', {
     maxBounds: bounds,
+    tileSize: 512,
+    zoomOffset: -1,
     maxZoom: 16,
     minZoom: 5
 }).setView([40, -81], 5);

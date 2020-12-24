@@ -6,7 +6,7 @@ var southWest = L.latLng(33.064, -99.053),
     northEast = L.latLng(50.679, -69.697),
     bounds = L.latLngBounds(southWest, northEast);
 
-var map = L.mapbox.map('map', 'mapbox/streets-v11', {
+var map = L.mapbox.map('map', 'mapbox.satellite', {
         maxBounds: bounds,
         tileSize: 512,
         zoomOffset: -1,
